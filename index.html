@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+    <title>Awesome terminal presentation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body class="list">
+    <header class="caption">
+        <h1>Awesome terminal presentation</h1>
+        <p>Created by Christian Blank</p>
+
+        <button onclick="fullScreen()">Switch to fullscreen</button>
+    </header>
+    <section class="slide cover" id="Cover"><div>
+        <h2>Using a shell in a presentation</h2>
+        <img src="pictures/cover.jpg" alt="">
+    </div></section>
+    <section class="slide"><div>
+        <h2>Slide with an interactive shell</h2>
+        <div class="shell">
+            <div>
+                <div class="history">
+                    <p><span class="cmd">$&gt; ping 8.8.8.8</span><br>
+                    PING 8.8.8.8 (8.8.8.8): 56 data bytes<br>
+                    ping: sendto: No route to host<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 0<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 1<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 2<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 3<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 4<br>
+                    ^[ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 5<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 6
+                    </p>
+                </div>
+                <div class="prompt-line">
+                    <div class="prompt">$&gt; </div>
+                    <div class="cmd"><input type="text"></div>
+                </div>
+            </div>
+        </div>
+    </div></section>
+    <div class="progress"><div></div></div>
+    <script src="shower/shower.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

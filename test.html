@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+    <title>Awesome terminal presentation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body class="list">
+        <h2>Slide with an interactive shell</h2>
+        <div class="shell">
+            <div>
+                <div class="history">
+                    <p><span class="cmd">$&gt; ping 8.8.8.8</span><br>
+                    PING 8.8.8.8 (8.8.8.8): 56 data bytes<br>
+                    ping: sendto: No route to host<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 0<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 1<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 2<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 3<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 4<br>
+                    ^[ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 5<br>
+                    ping: sendto: No route to host<br>
+                    Request timeout for icmp_seq 6
+                    </p>
+                </div>
+                <div class="prompt-line">
+                    <div class="prompt">$&gt; </div>
+                    <div class="cmd">
+                        <form action="/cmd" method="POST">
+                            <input type="text" name="command">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
