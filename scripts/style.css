@@ -1,0 +1,97 @@
+#Cover h2 {
+    margin:30px 0 0;
+    color:#FFF;
+    text-align:center;
+    font-size:70px;
+    }
+#Cover p {
+    margin:10px 0 0;
+    text-align:center;
+    color: #444444;
+    font-style:italic;
+    font-size:20px;
+}
+
+button {
+    -moz-user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+button::-moz-focus-inner {
+    border: 0 none;
+    padding: 0;
+}
+button {
+    background-color: #e6e6e6;
+    border: 0 none rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+button, button:hover, button:focus {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+button:focus {
+    outline: 0 none;
+}
+button, button:active {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+button[disabled] {
+    background-image: none;
+    border: 0 none;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+/* SHELL plugin */
+.shell {
+    font-family:Courier;
+    color: #CCCCCC;
+    background: #000000;
+    border: 3px double #CCCCCC;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+}
+    .shell .history {
+        max-height: 203px;
+        overflow: scroll;
+        margin-bottom: 8px;
+    }
+    .shell .history p {
+        
+    }
+    .shell .history p .cmd {
+        font-weight: bold;
+    }
+    .shell .prompt-line {
+        font-weight: bold;
+        font-size: 14px;
+        width: 100%;
+    }
+    .shell .prompt-line .prompt {
+        float: left;
+        margin-right: 10px;
+    }
+    .shell .prompt-line .cmd {
+        width: 100%;
+    }
+    .shell .prompt-line .cmd input {
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        background: none;
+        color: #CCCCCC;
+        display: block;
+        width: 100%;    
+    }
