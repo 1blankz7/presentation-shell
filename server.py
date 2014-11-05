@@ -29,7 +29,11 @@ class ServerHandler(http.server.SimpleHTTPRequestHandler):
 
 
 if __name__ == '__main__':
-    PORT = 1338
+    import sys
+    if len(sys.argv) > 1:
+        PORT = int(sys.argv[1])
+    else:
+        PORT = 1338
     Handler = ServerHandler
 
     httpd = socketserver.TCPServer(("", PORT), Handler)

@@ -1,6 +1,6 @@
-PORT=1337
+PORT=1338
 
 all: run
 
 run:
-	python3 server.py
+	python3 server.py $(PORT)
