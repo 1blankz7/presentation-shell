@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <title>Awesome terminal presentation</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=792, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
@@ -11,21 +11,30 @@
 <body class="list">
     <header class="caption">
         <h1>Awesome terminal presentation</h1>
-        <p>Created by Christian Blank</p>
+        <p>Created by Christian Blank <cite>{Aslan:2013:IHB:2512349.2514919}</cite></p>
 
         <button onclick="fullScreen()">Switch to fullscreen</button>
     </header>
     <section class="slide cover" id="Cover"><div>
         <h2>Using a shell in a presentation</h2>
-        <img src="pictures/cover.jpg" alt="">
+        <img src="pictures/cover.jpg" alt=""/>
     </div></section>
     <section class="slide"><div>
         <h2>Slide with an interactive shell</h2>
         <div class="shell"></div>
     </div></section>
+    <section class="slide"><div>
+        <h2>Slide with some references</h2>
+        <p>Lorem ipsum dolor Lorem ipsum dolor sit amet <cite>{963459}</cite>, consectetur adipisicing elit. Eligendi inventore nisi suscipit quos repudiandae <cite>{963459}</cite> perspiciatis deserunt iste ea repellat, quidem dignissimos <cite>{agrawal2008censure}</cite>, facere quae temporibus porro animi, voluptate dolores. Eos, facere? <cite>Hans Werner</cite></p>
+    </div></section>
+    <section class="slide"><div>
+        <h2>Sources</h2>
+        <bibliography>literature.bib</bibliography>
+    </div></section>
     <div class="progress"><div></div></div>
     <script src="shower/shower.min.js"></script>
     <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.shell.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

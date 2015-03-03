@@ -1,5 +1,4 @@
 import http.server
-import socketserver
 import cgi
 import json
 from shell import Shell
@@ -51,7 +50,7 @@ if __name__ == '__main__':
 
     def signal_handler(sig, frame):
         print('You pressed Ctrl+C!')
-        StoppableHttpServer.STOP = False
+        StoppableHttpServer.STOP = True
         print('Server shutdown!')
         sys.exit(0)
 
